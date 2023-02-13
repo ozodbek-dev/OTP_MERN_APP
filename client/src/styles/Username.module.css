@@ -16,10 +16,10 @@
     @apply border-none px-5 py-4 rounded-xl   w-3/4 shadow-sm text-lg;
     @apply focus:outline-none;
 }
+input[type="file"] {
+    display: none;
+}
 
-/*.btn {*/
-/*    @apply*/
-/*}*/
 
 .btn:hover {
     background-color: #ff6a6a;
