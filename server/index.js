@@ -1,3 +1,4 @@
+import "./config/loadDotenv.js"
 import express from 'express'
 import cors from 'cors'
 import connectToServer from "./config/server.js";

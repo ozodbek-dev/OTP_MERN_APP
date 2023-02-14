@@ -3,9 +3,9 @@ import mongoose from 'mongoose';
       mongoose.set("strictQuery",true) ;
       let isConnected = false;
 
- return  mongoose.connect('mongodb+srv://Ozodbek-Bakhtiyorov:ozodbek%40dev2000@cluster0.oyttms2.mongodb.net/otp_auth', err=>{
+ return  mongoose.connect(process.env.MONGODB_URI, err=>{
      if(!err){
-       console.log("mongodb Connected successfully")
+       console.log("mongodb Connected successfully ")
          isConnected=true
      }
      else{
